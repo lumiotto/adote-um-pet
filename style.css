@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1024px;
+}
+
+header {
+    background-color: #32863d;
+}
+
+#menu a {
+    font-size: 20px;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+h1 {
+    font-style: italic;
+}
+
+#carousel {
+    padding: 16px 0;
+}
+
+.carousel-caption h2 {
+    color: #000;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+p {
+    font-size: 20px;
+}
+
+section h2 {
+    color: #32863d;
+    margin-bottom: 16px;
+}
+
+.col-4 {
+    width: 100%;
+    padding: 0;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, 31%);
+    column-gap: 2%;
+    row-gap: 2%;
+    margin-bottom: 30px;
+
+}
+
+.card-body a {
+    width: 100%;
+    font-size: 20px;
+}
+
+#contato h2 {
+    margin-top: 60px;
+}
+
+form {
+    width: 500px
+}
+
+form textarea {
+    resize: none;
+    height: 200px;
+}
+
+form button {
+    width: 200px;
+    margin: 16px 0;
+}
+
+@media screen and (max-width:1023px) and (min-width: 768px) {
+    .carousel-caption h2 {
+        font-size: 20px;
+    }
+    
+    .row {
+        grid-template-columns: repeat(2, 46%);
+        column-gap: 3%;
+        row-gap: 1%;
+    }
+
+    #contato h2 {
+        margin-top: 90px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .carousel-caption h2 {
+        font-size: 16px;
+    }
+    
+    .row {
+        grid-template-columns: repeat(1, 95%);
+        column-gap: 0;
+        row-gap: 0.5%;
+    }
+
+    #contato h2 {
+        margin-top: 170px;
+    }
+}
